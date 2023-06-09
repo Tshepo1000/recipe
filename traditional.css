@@ -1,0 +1,259 @@
+body{
+    background-color: #dfe8ff;
+    /* background-image: url(./images/GettyImages-1067009654.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+}
+
+.card-container{
+    display: flex;
+    background-color: rgb(253, 252, 253);
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 30px;
+    box-shadow: 0px 2px 2px gray;
+}
+
+
+.card-details, .card-details1, 
+.card-details2, .card-details3,
+.card-details4, .card-details5,
+.card-details6, .card-details7
+{
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.card-button, .card-button1, 
+.card-button2, .card-button3,
+.card-button4, .card-button5,
+.card-button6, .card-button7
+{
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.text-title, .text-title1, 
+.text-title2, .text-title3,
+.text-title4, .text-title5,
+.text-title6, .text-title7
+{
+    margin-top: 0%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    bottom: 50%;
+    transform: translate(-10%, -60%);
+}
+
+.card1:hover, .card:hover, 
+.card2:hover, .card3:hover,
+.card4:hover, .card5:hover,
+.card6:hover, .card7:hover
+{
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-details>img, .card-details1>img, 
+.card-details2>img, .card-details3>img,
+.card-details4>img, .card-details5>img,
+.card-details6>img, .card-details7>img
+{
+    /* opacity: 90%; */
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* recipe0 */
+.card{
+    float: left;
+    margin-top: 5%;
+    float: right;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 5%;
+}
+
+.card:hover .card-button{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe1 */
+.card1{
+    float: left;
+    margin-top: 5%;
+    float: right;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 23%;
+}
+
+.card1:hover .card-button1{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe2 */
+.card2{
+    float: left;
+    margin-top: 5%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 41%;
+}
+
+.card2:hover .card-button2{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe3 */
+.card3{
+    float: left;
+    margin-top: 5%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 59%;
+}
+
+.card3:hover .card-button3{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe4 */
+.card4{
+    float: left;
+    margin-top: 25%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 5%;
+}
+
+.card4:hover .card-button4{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe5 */
+.card5{
+    float: left;
+    margin-top: 25%;
+    float: right;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 23%;
+}
+
+.card5:hover .card-button5{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe6 */
+.card6{
+    float: left;
+    margin-top: 25%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 41%;
+}
+
+.card6:hover .card-button6{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* recipe7 */
+.card7{
+    float: left;
+    margin-top: 25%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: absolute;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-left: 59%;
+}
+
+.card7:hover .card-button7{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}

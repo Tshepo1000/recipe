@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Recipe | Register</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="register.css">
+   
+    <script src="navigation.js" defer></script>
+    <script src="register.js" defer type="module"></script>
+
+</head>
+<body>
+    <nav class="nav-container">
+        <a href="./index.html"><h1 id="logo">TheRecipe</h1></a>
+
+        <!-- hamburger lines -->
+        <div class="hamburger">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+        </div>
+
+        <!-- links -->
+        <ul id="nav-links">
+            <li><a href="./home.html" id="links">Home</a></li>
+            <li><a href="./about.html" id="links">About</a></li>
+            <li><a href="./contact.html" id="links">Contact</a></li>            
+        </ul>
+    </nav> 
+
+    <!--Login/Register HTML-->
+
+    <div class="login-container">
+        <div id="main">
+            <h1 id="sign">Sign In</h1>
+            <input type="email" id="email" placeholder="Email"></input>
+            <input type="password" id="password" placeholder="Password"></input>
+            <button id="submit">Login</button>
+            <p><span>or</span></p>
+            <button id="sign-up">Sign Up</button>
+        </div>
+
+        <div id="create-acct">
+            <h1 id="sign">Create an Account</h1>
+            <input type="email" id="email-signup" placeholder="Email"></input>
+            <input type="email" id="confirm-email-signup" placeholder="Confirm Email"></input>
+            <input type="password" id="password-signup" placeholder="Password"></input>
+            <input type="password" id="confirm-password-signup" placeholder="Confirm Password"></input>
+            <button id="create-acct-btn">Create Account</button>
+            <button id="return-btn">Already have an account? Login</button>
+        </div>
+    </div>
+</body>
+</html>
