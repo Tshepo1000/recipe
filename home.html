@@ -10,6 +10,31 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>The Recipe | Home</title>
+    <style type="text/css">
+        .main-content{
+            display: grid;
+            grid-template-areas: "head head head"
+                                 "side content content"
+                                 "foot foot foot";
+            grid-template-rows: 50px auto 50px;
+        }
+
+        .header-content{
+            grid-area: head;
+        }
+
+        .article-content{
+            grid-area: content;
+        }
+
+        .aside-content{
+            grid-area: side;
+        }
+
+        .footer-content{
+            grid-area: foot;
+        }
+    </style>
 </head>
 <body>
     <div class="home-main">
@@ -31,52 +56,21 @@
                 <li><a href="./register.html" id="links">Register</a></li>
             </ul>
         </nav> 
+        
+        <main class="main-content">
+            <header class="header-content">
 
-        <footer>
-            <section class="footer-section">
-                <section>
-                    <a href="./index.html"><h1 id="logo-footer">TheRecipe</h1></a>
-                    <span class="social-links">
-                        <ul class="ul">
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </span>
-                </section>
-                <section>
-                    <menu>
-                        <h2>The Recipe</h2>
-                        <li>
-                            <a href="#">Lorem Ipsum</a>
-                        </li>
-                        <li>
-                            <a href="">Lorem Ipsum</a>
-                        </li>
-                        <li>
-                            <a href="">Lorem Ipsum</a>
-                        </li>
-                    </menu>
-                </section>   
-                <section>
-                    <menu>
-                        <h2>Company</h2>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="">About Us</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                    </menu>
-                </section>
-            </section>
-            <section className="footer-bottom">
-                <p>&copy; The Recipe Ltd. 2023 all rights reserved</p>
-            </section>
-        </footer>
+            </header>
+            <article class="article-content">
+
+            </article>
+            <aside class="aside-content">
+
+            </aside>
+            <footer class="footer-content">
+
+            </footer>
+        </main>
     </div>
 </body>
 </html>
