@@ -16,11 +16,12 @@
             grid-template-areas: "head head head"
                                  "side content content"
                                  "foot foot foot";
-            grid-template-rows: 50px auto 50px;
+            grid-template-rows: 350px auto 50px;
         }
 
         .header-content{
             grid-area: head;
+            background: linear-gradient(rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url();
         }
 
         .article-content{
@@ -33,6 +34,24 @@
 
         .footer-content{
             grid-area: foot;
+        }
+
+        .cont{
+            position: relative;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .slider{
+            position: relative;
+            height: 100%;
+            transform: translate3d(0, 0, 0);
+            will-change: transform;
+            cursor: all-scroll;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
     </style>
 </head>
@@ -59,7 +78,14 @@
         
         <main class="main-content">
             <header class="header-content">
+                <div class="cont">
+                    <div class="slider">
 
+                    </div>
+                    <ul class="nav"></ul>
+                    <div data-target='right' class="side-nav side-nav--right"></div>
+                    <div data-target='left' class="side-nav side-nav--left"></div>
+                </div>
             </header>
             <article class="article-content">
 
